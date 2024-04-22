@@ -1,0 +1,64 @@
+$primary-color: red;
+
+/* dark shades of primary color*/
+$clr-primary-1: hsl(184, 91%, 17%);
+$clr-primary-2: hsl(185, 84%, 25%);
+
+$clr-primary-3: hsl(185, 81%, 29%);
+$clr-primary-4: hsl(184, 77%, 34%);
+/* pvrimary/main color */
+$clr-primary-5: hsl(185, 62%, 45%);
+
+/* lighter shades of primary color */
+$clr-primary-6: hsl(185, 57%, 50%);
+$clr-primary-7: hsl(184, 65%, 59%);
+$clr-primary-8: hsl(184, 80%, 74%);
+$clr-primary-9: hsl(185, 94%, 87%);
+$clr-primary-10: hsl(186, 100%, 94%);
+/* darkest grey - used for headings */
+$clr-grey-1: hsl(209, 61%, 16%);
+$clr-grey-2: hsl(211, 39%, 23%);
+$clr-grey-3: hsl(209, 34%, 30%);
+$clr-grey-4: hsl(209, 28%, 39%);
+/* grey used for paragraphs */
+$clr-grey-5: hsl(210, 22%, 49%);
+$clr-grey-6: hsl(209, 23%, 60%);
+$clr-grey-7: hsl(211, 27%, 70%);
+$clr-grey-8: hsl(210, 31%, 80%);
+$clr-grey-9: hsl(212, 33%, 89%);
+$clr-grey-10: hsl(210, 36%, 96%);
+
+/* end of new */
+$green: #476a2e;
+$red: #c02c03;
+$mainWhite: #fff;
+$offWhite: #f7f7f7;
+$mainBackground: $clr-grey-10;
+$mainText: $clr-grey-1;
+$mainOverlay: rgba(35, 10, 36, 0.4);
+$mainBlack: #222;
+$mainGrey: #ececec;
+$darkGrey: #afafaf;
+$mainRed: #bd0303;
+$mainBorderRadius: 0.25rem;
+$smallWidth: 85vw;
+$maxWidth: 40rem;
+$fullWidth: 1170px;
+$transition: all 0.3s linear;
+$spacing: 0.2rem;
+$spacing1: 0.3rem;
+$radius: 0.5rem;
+$font-R: 'Roboto', sans-serif;
+$font-P: 'Pacifico', cursive;
+$font-L: 'Lato', sans-serif;
+$font-PL: 'Platypi', serif;
+/* box shadow */
+$shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 10px 10px -5px rgba(0, 0, 0, 0.04);
+/* specific box shadow*/
+$lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+$darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);

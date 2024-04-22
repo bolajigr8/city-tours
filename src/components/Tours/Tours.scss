@@ -1,0 +1,112 @@
+@import '../../scss/variables';
+@import '../../scss/resets';
+
+.no-tours {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 7rem);
+}
+.tours-section {
+  max-width: $fullWidth;
+  margin: 0 auto;
+
+  .tours-title {
+    text-align: center;
+    h1 {
+      color: $clr-primary-8;
+    }
+    div {
+      background: $clr-primary-8;
+      width: 5.5rem;
+      height: 0.3rem;
+      border-radius: $radius;
+      margin: 0 auto;
+    }
+    margin-top: -3rem;
+    margin-bottom: 8rem;
+  }
+}
+
+.tours-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+
+  .tour {
+    // border: 2px solid red;
+    // width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    transition: $transition;
+    background: $offWhite;
+    width: 20rem;
+    min-height: 20rem;
+    border-radius: $radius;
+
+    // color: $clr-primary-3;
+    position: relative;
+    .deleteBtn-container {
+      transform: scale(0);
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0.1rem 0.2rem;
+      border-color: transparent;
+      background: $clr-primary-1;
+      border-bottom-left-radius: $radius;
+      transition: $transition;
+      .delete-btn {
+        font-size: 1.7rem;
+        color: $clr-primary-10;
+      }
+    }
+    img {
+      height: 15rem;
+      width: 20rem;
+      border-top-left-radius: $radius;
+      border-top-right-radius: $radius;
+      object-fit: cover;
+    }
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-family: $font-P;
+      color: $clr-primary-2;
+    }
+    h4 {
+      font-size: 1rem;
+      color: $clr-primary-4;
+      font-family: $font-PL;
+    }
+    p {
+      color: $clr-primary-2;
+      font-family: $font-L;
+      transition: $transition;
+    }
+    .tour-info {
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+      transition: $transition;
+    }
+    &:hover {
+      box-shadow: $darkShadow;
+      transform: scale(1.03);
+      .deleteBtn-container {
+        transform: scale(1);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.tour-btn {
+  color: $clr-primary-3;
+  border: transparent;
+  transform: translate(0.2rem, 0.1rem);
+  transition: $transition;
+  font-size: 0.9rem;
+  &:hover {
+    cursor: pointer;
+  }
+}

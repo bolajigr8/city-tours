@@ -1,0 +1,55 @@
+@import '../../scss/variables';
+@import '../../scss/resets';
+
+.about-section {
+  transition: $transition;
+  .about-pic {
+    display: none;
+  }
+  .tours-title {
+    text-align: center;
+    margin-top: -3rem;
+    h1 {
+      color: $clr-primary-8;
+      text-align: center;
+    }
+    div {
+      background: $clr-primary-8;
+      width: 5.5rem;
+      height: 0.3rem;
+      border-radius: $radius;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+  }
+  .about-info {
+    padding: 2.5rem 2rem;
+  }
+
+  p {
+    color: $clr-primary-8;
+    max-width: 30rem;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    h1 {
+      text-align: left;
+    }
+    .about-pic {
+      display: block;
+      img {
+        width: 25rem;
+        height: 22.5rem;
+        border-radius: $radius;
+      }
+    }
+  }
+}

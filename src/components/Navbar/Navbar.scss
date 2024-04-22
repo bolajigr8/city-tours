@@ -1,0 +1,78 @@
+@import '../../scss/variables';
+@import '../../scss/resets';
+
+.navbar {
+  // background: transparent;
+  position: relative;
+  z-index: 3;
+  transition: $transition;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 7rem;
+  max-width: $fullWidth;
+  transition: $transition;
+}
+.nav-title {
+  font-size: 2rem;
+  color: $clr-primary-8;
+  text-transform: capitalize;
+  font-family: $font-P;
+  margin-left: 1rem;
+  div {
+    margin-bottom: -0.9rem;
+  }
+}
+.nav-btn {
+  margin-top: 1rem;
+  margin-right: 2rem;
+  font-size: 3rem;
+  color: $clr-primary-8;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+.nav-links {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  .nav-link {
+    color: $clr-primary-5;
+    text-transform: capitalize;
+    display: block;
+    margin-right: 0.6rem;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    padding: 0.25rem 0.5rem;
+    transition: $transition;
+    font-family: $font-PL;
+  }
+  .nav-active {
+    color: $clr-primary-9;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .nav-btn {
+    font-size: 2.5rem;
+  }
+  .nav-title {
+    font-size: 2rem;
+  }
+}
