@@ -5,10 +5,10 @@ import './Sidebar.scss'
 import { FaTimes } from 'react-icons/fa'
 import { BiHome } from 'react-icons/bi'
 import { PiAirplaneTakeoff } from 'react-icons/pi'
-import { SlList } from 'react-icons/sl'
+
 import { BsBackpack } from 'react-icons/bs'
 const Sidebar = () => {
-  const { cl, closeSidebar, isSidebarOpen } = useGlobalContext()
+  const { closeSidebar, isSidebarOpen } = useGlobalContext()
   const currentYear = new Date().getFullYear()
   return (
     <div

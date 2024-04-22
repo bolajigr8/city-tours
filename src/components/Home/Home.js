@@ -2,9 +2,8 @@ import React from 'react'
 import './Home.scss'
 import { Link } from 'react-router-dom'
 import Image from './images/Home2.jpg'
-import { useGlobalContext } from '../../context'
+
 const Home = () => {
-  const { isSidebarOpen } = useGlobalContext()
   return (
     <section className='section hero'>
       <div className='section-center hero-center'>
