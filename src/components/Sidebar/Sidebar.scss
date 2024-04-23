@@ -107,7 +107,7 @@
 
 .sidebar-info {
   position: absolute;
-  left: 0;
+  left: 2rem;
   bottom: 2rem;
   // margin: 0 auto;
   text-align: center;
@@ -120,5 +120,8 @@
   .sidebar {
     width: 87vw;
     height: 80vh;
+  }
+  .sidebar-info {
+    left: 0;
   }
 }
