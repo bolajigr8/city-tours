@@ -107,10 +107,18 @@
 
 .sidebar-info {
   position: absolute;
+  left: 0;
   bottom: 2rem;
-  margin: 0 auto;
+  // margin: 0 auto;
   text-align: center;
   max-width: 25rem;
   text-transform: capitalize;
   color: $clr-primary-1;
+}
+
+@media screen and (max-width: 485px) {
+  .sidebar {
+    width: 80vw;
+    height: 80vh;
+  }
 }
